@@ -1,0 +1,216 @@
+#N canvas 538 61 1048 423 12;
+#N canvas 1526 61 392 483 hid-init 1;
+#X msg 88 111 close;
+#X msg 108 172 refresh;
+#X msg 103 152 print;
+#X msg 96 132 info;
+#X obj 85 236 hid 0;
+#X msg 79 91 poll 20;
+#X obj 72 9 loadbang;
+#X msg 208 170 open 0x0079 0x0126;
+#X obj 123 47 t b b;
+#X obj 85 265 outlet;
+#N canvas 6 69 802 378 snes-errata 0;
+#X obj 290 150 s LEFTRIGHT;
+#X msg 232 30 1;
+#X obj 219 85 s LEFTRIGHT;
+#X msg 262 30 2;
+#X msg 178 30 0;
+#X obj 313 77 s UPDOWN;
+#X obj 120 97 sel 0 128 255;
+#X floatatom 148 175 5 0 0 0 - - -, f 5;
+#X msg 125 122 0;
+#X msg 152 122 1;
+#X msg 181 122 2;
+#X msg 62 57 1;
+#X msg 33 56 0;
+#X msg 6 56 1;
+#X floatatom 12 91 5 0 0 0 - - -, f 5;
+#X msg 468 149 Examples being "alt+r" \, "Control_L+J" \, "ctrl+alt+n"
+\, "BackSpace".;
+#X msg 441 201 Examples being "alt+r" \, "Control_L+J" \, "ctrl+alt+n"
+\, "BackSpace".;
+#X connect 1 0 2 0;
+#X connect 1 0 5 0;
+#X connect 3 0 2 0;
+#X connect 3 0 5 0;
+#X connect 4 0 2 0;
+#X connect 4 0 5 0;
+#X connect 6 0 8 0;
+#X connect 6 1 9 0;
+#X connect 6 2 10 0;
+#X connect 8 0 7 0;
+#X connect 9 0 7 0;
+#X connect 10 0 7 0;
+#X connect 11 0 14 0;
+#X connect 12 0 14 0;
+#X connect 13 0 14 0;
+#X restore 75 307 pd snes-errata;
+#X connect 0 0 4 0;
+#X connect 1 0 4 0;
+#X connect 2 0 4 0;
+#X connect 3 0 4 0;
+#X connect 4 0 9 0;
+#X connect 5 0 4 0;
+#X connect 6 0 8 0;
+#X connect 7 0 4 0;
+#X connect 8 0 5 0;
+#X connect 8 1 7 0;
+#X restore 13 32 pd hid-init;
+#N canvas 4 301 956 646 snes-in 1;
+#X obj 420 -1891 tgl 25 0 XBTN empty empty 0 -6 0 8 #bcbcbc #000000
+#000000 0 1;
+#X obj 466 -1891 tgl 25 0 ABTN empty empty 0 -6 0 8 #bcbcbc #000000
+#000000 0 1;
+#X obj 513 -1891 tgl 25 0 BBTN empty empty 0 -6 0 8 #bcbcbc #000000
+#000000 0 1;
+#X obj 560 -1891 tgl 25 0 YBTN empty empty 0 -6 0 8 #bcbcbc #000000
+#000000 0 1;
+#X obj 607 -1891 tgl 25 0 LEFTSHOULDERBTN empty empty 0 -6 0 8 #bcbcbc
+#000000 #000000 0 1;
+#X obj 654 -1891 tgl 25 0 RIGHTSHOULDERBTN empty empty 0 -6 0 8 #bcbcbc
+#000000 #000000 0 1;
+#X obj 98 -1727 tgl 25 0 empty empty empty 0 -6 0 8 #bcbcbc #000000
+#000000 0 1;
+#X obj 20 -1919 route abs_x abs_y;
+#X obj 20 -1890 sel 0 128 255;
+#X obj 20 -1731 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 76 -1731 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 214 -1888 sel 0 128 255;
+#X obj 214 -1731 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 272 -1731 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 420 -1920 route btn_0 btn_1 btn_2 btn_3 btn_4 btn_5 btn_8 btn_9
+, f 54;
+#X obj 742 -1891 tgl 25 0 STARTBTN empty empty 0 -6 0 8 #bcbcbc #000000
+#000000 0 1;
+#X obj 742 -1846 sel 1;
+#X obj 513 -1846 sel 1;
+#X obj 421 -1846 sel 1;
+#X obj 19 -1443 shell;
+#X obj 560 -1846 sel 1;
+#X obj 76 -1677 spigot;
+#X obj 20 -1677 spigot;
+#X obj 697 -1891 tgl 25 0 SELECTBTN empty empty 0 -6 0 8 #bcbcbc #000000
+#000000 0 1;
+#X obj 466 -1747 spigot;
+#X msg 742 -1604 "XF86AudioPlay";
+#X msg 19 -1639 "XF86AudioPrev";
+#X msg 77 -1604 "XF86AudioNext";
+#X msg 654 -1604 "Right";
+#X msg 604 -1639 "Left";
+#X obj 69 -1443 print xdotoolcheck;
+#X obj 19 -1508 symbol;
+#X msg 19 -1482 xdotool key \$1;
+#X msg 513 -1639 "ctrl+l";
+#X msg 421 -1639 "r";
+#X msg 560 -1604 "f";
+#X obj 20 -1969 route abs key;
+#X obj 20 -1996 inlet;
+#X obj 92 -1819 s LEFTRIGHT;
+#X obj 291 -1819 s UPDOWN;
+#X msg 214 -1864 0, f 1;
+#X msg 243 -1864 1, f 1;
+#X msg 272 -1864 2, f 1;
+#X msg 20 -1863 0, f 1;
+#X msg 49 -1863 1, f 1;
+#X msg 78 -1863 2, f 1;
+#X msg 272 -1603 "XF86AudioLowerVolume";
+#X msg 214 -1639 "XF86AudioRaiseVolume";
+#X connect 0 0 18 0;
+#X connect 1 0 24 0;
+#X connect 2 0 17 0;
+#X connect 3 0 20 0;
+#X connect 4 0 29 0;
+#X connect 5 0 28 0;
+#X connect 6 0 21 1;
+#X connect 6 0 22 1;
+#X connect 7 0 8 0;
+#X connect 7 1 11 0;
+#X connect 8 0 43 0;
+#X connect 8 1 44 0;
+#X connect 8 2 45 0;
+#X connect 9 0 22 0;
+#X connect 10 0 21 0;
+#X connect 11 0 40 0;
+#X connect 11 1 41 0;
+#X connect 11 2 42 0;
+#X connect 12 0 47 0;
+#X connect 13 0 46 0;
+#X connect 14 0 0 0;
+#X connect 14 1 1 0;
+#X connect 14 2 2 0;
+#X connect 14 3 3 0;
+#X connect 14 4 4 0;
+#X connect 14 5 5 0;
+#X connect 14 6 23 0;
+#X connect 14 7 15 0;
+#X connect 15 0 16 0;
+#X connect 16 0 25 0;
+#X connect 17 0 33 0;
+#X connect 18 0 34 0;
+#X connect 20 0 35 0;
+#X connect 21 0 27 0;
+#X connect 22 0 26 0;
+#X connect 23 0 24 1;
+#X connect 24 0 6 0;
+#X connect 25 0 31 0;
+#X connect 26 0 31 0;
+#X connect 27 0 31 0;
+#X connect 28 0 31 0;
+#X connect 29 0 31 0;
+#X connect 31 0 32 0;
+#X connect 32 0 30 0;
+#X connect 32 0 19 0;
+#X connect 33 0 31 0;
+#X connect 34 0 31 0;
+#X connect 35 0 31 0;
+#X connect 36 0 7 0;
+#X connect 36 1 14 0;
+#X connect 37 0 36 0;
+#X connect 40 0 12 0;
+#X connect 40 0 39 0;
+#X connect 41 0 39 0;
+#X connect 42 0 13 0;
+#X connect 42 0 39 0;
+#X connect 43 0 9 0;
+#X connect 43 0 38 0;
+#X connect 44 0 38 0;
+#X connect 45 0 10 0;
+#X connect 45 0 38 0;
+#X connect 46 0 31 0;
+#X connect 47 0 31 0;
+#X restore 13 66 pd snes-in;
+#X obj 170 22 tgl 35 0 empty LEFTSHOULDERBTN LEFT\ SHOULDER -14 -13
+0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 435 144 tgl 35 0 empty STARTBTN START 2 -14 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 612 23 tgl 35 0 empty RIGHTSHOULDERBTN RIGHT\ SHOULDER -22 -13
+0 10 #fcfcfc #000000 #000000 0 1;
+#X text 290 29 <<<<--- LEFT/RIGHT ARROW ----->>>>>;
+#X obj 335 144 tgl 35 0 empty SELECTBTN SELECT 2 -14 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 613 98 tgl 35 0 empty XBTN X 18 -14 0 10 #fcfcfc #000000 #000000
+0 1;
+#X obj 565 143 tgl 35 0 empty YBTN Y 14 -14 0 10 #fcfcfc #000000 #000000
+0 1;
+#X obj 659 144 tgl 35 0 empty ABTN A 11 -13 0 10 #fcfcfc #000000 #000000
+0 1;
+#X obj 613 197 tgl 35 0 empty BBTN B 10 -14 0 10 #fcfcfc #000000 #000000
+0 1;
+#X obj 136 141 hradio 35 0 0 3 empty LEFTRIGHT LEFT/RIGHT -66 17 0
+10 #fcfcfc #000000 #000000 1;
+#X obj 171 106 vradio 35 0 0 3 empty UPDOWN UP/DOWN 5 -11 0 10 #fcfcfc
+#000000 #000000 1;
+#X text 569 365 Y: toggle fullscreen (f);
+#X text 569 337 B: show VLC playlist (ctrl+L);
+#X text 569 307 A: toggle prev/next lock;
+#X text 569 276 X: toggle random play order;
+#X text 92 276 UP/DOWN: VOLUME;
+#X text 94 307 lEFT/RIGHT: PREVIOUS/NEXT;
+#X text 303 307 SELECT: unlock prev/next (A btn);
+#X text 303 276 START: play/pause;
+#X connect 0 0 1 0;
