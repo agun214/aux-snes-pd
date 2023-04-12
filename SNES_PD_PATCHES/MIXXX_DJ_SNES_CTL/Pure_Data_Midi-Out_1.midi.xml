@@ -1,0 +1,360 @@
+<?xml version='1.0' encoding='utf-8'?>
+<MixxxControllerPreset mixxxVersion="" schemaVersion="1">
+    <info/>
+    <controller id="Pure">
+        <scriptfiles/>
+        <controls>
+            <control>
+                <group>[Channel1]</group>
+                <key>loop_halve</key>
+                <description>MIDI Learned from 26 messages.</description>
+                <status>0x90</status>
+                <midino>0x0A</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel1]</group>
+                <key>beatjump_0.25_forward</key>
+                <description>MIDI Learned from 22 messages.</description>
+                <status>0x90</status>
+                <midino>0x06</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel2]</group>
+                <key>loop_halve</key>
+                <description>MIDI Learned from 26 messages.</description>
+                <status>0x91</status>
+                <midino>0x0A</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel2]</group>
+                <key>beatjump_0.25_forward</key>
+                <description>MIDI Learned from 22 messages.</description>
+                <status>0x91</status>
+                <midino>0x06</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel1]</group>
+                <key>beatjump_backward</key>
+                <description>MIDI Learned from 32 messages.</description>
+                <status>0x90</status>
+                <midino>0x07</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel2]</group>
+                <key>beatjump_backward</key>
+                <description>MIDI Learned from 20 messages.</description>
+                <status>0x91</status>
+                <midino>0x07</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel1]</group>
+                <key>hotcue_3_activate</key>
+                <description>MIDI Learned from 10 messages.</description>
+                <status>0x90</status>
+                <midino>0x01</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel2]</group>
+                <key>hotcue_3_activate</key>
+                <description>MIDI Learned from 6 messages.</description>
+                <status>0x91</status>
+                <midino>0x01</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel1]</group>
+                <key>hotcue_4_activate</key>
+                <description>MIDI Learned from 12 messages.</description>
+                <status>0x90</status>
+                <midino>0x02</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel2]</group>
+                <key>hotcue_4_activate</key>
+                <description>MIDI Learned from 8 messages.</description>
+                <status>0x91</status>
+                <midino>0x02</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel1]</group>
+                <key>play</key>
+                <description>MIDI Learned from 2 messages.</description>
+                <status>0x90</status>
+                <midino>0x60</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel2]</group>
+                <key>play</key>
+                <description>MIDI Learned from 4 messages.</description>
+                <status>0x91</status>
+                <midino>0x60</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel1]</group>
+                <key>hotcue_1_activate</key>
+                <description>MIDI Learned from 2 messages.</description>
+                <status>0x90</status>
+                <midino>0x03</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel2]</group>
+                <key>hotcue_1_activate</key>
+                <description>MIDI Learned from 2 messages.</description>
+                <status>0x91</status>
+                <midino>0x03</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel1]</group>
+                <key>beatloop_activate</key>
+                <description>MIDI Learned from 12 messages.</description>
+                <status>0x90</status>
+                <midino>0x5C</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel1]</group>
+                <key>hotcue_4_clear</key>
+                <description>MIDI Learned from 20 messages.</description>
+                <status>0x90</status>
+                <midino>0x48</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel2]</group>
+                <key>hotcue_4_clear</key>
+                <description>MIDI Learned from 16 messages.</description>
+                <status>0x91</status>
+                <midino>0x48</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel1]</group>
+                <key>beatloop_activate</key>
+                <description>MIDI Learned from 8 messages.</description>
+                <status>0x90</status>
+                <midino>0x5D</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel1]</group>
+                <key>hotcue_1_clear</key>
+                <description>MIDI Learned from 14 messages.</description>
+                <status>0x90</status>
+                <midino>0x49</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel2]</group>
+                <key>beatloop_activate</key>
+                <description>MIDI Learned from 2 messages.</description>
+                <status>0x91</status>
+                <midino>0x5D</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel2]</group>
+                <key>hotcue_1_clear</key>
+                <description>MIDI Learned from 10 messages.</description>
+                <status>0x91</status>
+                <midino>0x49</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel1]</group>
+                <key>hotcue_2_clear</key>
+                <description>MIDI Learned from 16 messages.</description>
+                <status>0x90</status>
+                <midino>0x4A</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel1]</group>
+                <key>beatjump_forward</key>
+                <description>MIDI Learned from 30 messages.</description>
+                <status>0x90</status>
+                <midino>0x08</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel2]</group>
+                <key>hotcue_2_clear</key>
+                <description>MIDI Learned from 12 messages.</description>
+                <status>0x91</status>
+                <midino>0x4A</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel1]</group>
+                <key>stop</key>
+                <description>MIDI Learned from 4 messages.</description>
+                <status>0x90</status>
+                <midino>0x5F</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel2]</group>
+                <key>beatjump_forward</key>
+                <description>MIDI Learned from 18 messages.</description>
+                <status>0x91</status>
+                <midino>0x08</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel1]</group>
+                <key>hotcue_2_activate</key>
+                <description>MIDI Learned from 4 messages.</description>
+                <status>0x90</status>
+                <midino>0x04</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel2]</group>
+                <key>stop</key>
+                <description>MIDI Learned from 6 messages.</description>
+                <status>0x91</status>
+                <midino>0x5F</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel2]</group>
+                <key>hotcue_2_activate</key>
+                <description>MIDI Learned from 4 messages.</description>
+                <status>0x91</status>
+                <midino>0x04</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel1]</group>
+                <key>loop_double</key>
+                <description>MIDI Learned from 28 messages.</description>
+                <status>0x90</status>
+                <midino>0x09</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel1]</group>
+                <key>hotcue_3_clear</key>
+                <description>MIDI Learned from 18 messages.</description>
+                <status>0x90</status>
+                <midino>0x47</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel2]</group>
+                <key>loop_double</key>
+                <description>MIDI Learned from 28 messages.</description>
+                <status>0x91</status>
+                <midino>0x09</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel1]</group>
+                <key>beatjump_0.25_backward</key>
+                <description>MIDI Learned from 24 messages.</description>
+                <status>0x90</status>
+                <midino>0x05</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel2]</group>
+                <key>hotcue_3_clear</key>
+                <description>MIDI Learned from 14 messages.</description>
+                <status>0x91</status>
+                <midino>0x47</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel2]</group>
+                <key>beatjump_0.25_backward</key>
+                <description>MIDI Learned from 24 messages.</description>
+                <status>0x91</status>
+                <midino>0x05</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+        </controls>
+        <outputs/>
+    </controller>
+</MixxxControllerPreset>
